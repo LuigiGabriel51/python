@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ensira uma senha de no minimo 8 caracter</h2>
+    <h2>{{msg}}</h2>
+    <form action="{{url_for('verifica_senha', email = email)}}" method="post">
+
+        <input type="password" name="senha" placeholder="senha">
+        
+        <input type="submit" value="redefinir">
+    </form>
+</body>
+</html>
